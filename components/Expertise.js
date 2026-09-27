@@ -1,26 +1,26 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Landmark, Terminal, Users2, ShieldCheck, Mail, Linkedin, Github, TrendingUp } from 'lucide-react';
+import { Landmark, Terminal, Users2 } from 'lucide-react';
 
 const cards = [
   {
-    title: 'Financial Systems',
-    description: 'Specialized testing for international money transfer, forex, and AML screening systems with fraud detection rules.',
+    title: 'Financial & Remittance',
+    description: 'Specialized testing for international money transfer, forex, AML screening, and payment processing systems.',
     icon: <Landmark className="w-8 h-8 text-emerald-600" />,
-    features: ['Forex & Remittance', 'Fraud Detection Rules', 'AML Analytic Screening']
+    features: ['Forex & Remittance', 'AML Screening Rules', 'Payment Processing']
   },
   {
-    title: 'API Mastery',
-    description: 'Expertise in manual and automated API testing using Postman & Newman collections for complex financial workflows.',
+    title: 'Automation & API Testing',
+    description: 'Playwright (TypeScript) suites, Postman API automation, data-driven testing, and SQL database validation.',
     icon: <Terminal className="w-8 h-8 text-emerald-600" />,
-    features: ['Postman Automation', 'SoapUI Testing', 'Dynamic Test Data']
+    features: ['Playwright (TypeScript)', 'Postman API Automation', 'SQL Database Validation']
   },
   {
-    title: 'Process Leadership',
-    description: 'Agile/Scrum expert managing defect lifecycles in JIRA and mentoring junior QA engineers through Knowledge Transfer (KT).',
+    title: 'Process & AI Innovation',
+    description: 'Agile/Scrum practitioner leveraging Generative AI for test design, JIRA defect management with RCA, and mentoring.',
     icon: <Users2 className="w-8 h-8 text-emerald-600" />,
-    features: ['SDLC & STLC Expert', 'Junior QA Mentorship', 'Knowledge Transfer (KT)']
+    features: ['AI-Assisted Test Design', 'Agile & JIRA Defect Lifecycle', 'Junior QA Mentorship']
   }
 ];
 
@@ -31,85 +31,37 @@ export default function Expertise() {
       <div className="absolute top-0 right-0 w-1/3 h-full bg-emerald-50/50 -skew-x-12 transform translate-x-1/2" />
 
       <div className="container max-w-6xl mx-auto px-6 relative z-10">
-        <div className="grid md:grid-cols-2 gap-16 items-start mb-24">
+        {/* Professional Synopsis */}
+        <div className="max-w-4xl mx-auto text-center mb-20 md:mb-24">
           <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="space-y-6"
+            className="space-y-6 flex flex-col items-center"
           >
             <h2 className="text-sm font-bold text-emerald-600 uppercase tracking-widest">Professional Synopsis</h2>
-            <h3 className="text-4xl md:text-5xl font-bold text-slate-900 tracking-tight leading-tight">
-              Passionate QA Engineer <br />
-              <span className="text-emerald-600">Delivering Quality.</span>
+            <h3 className="text-3xl md:text-5xl font-bold text-slate-900 tracking-tight leading-tight">
+              Senior Quality Assurance Engineer <br />
+              <span className="text-emerald-600">Driving Precision & Delivering Quality.</span>
             </h3>
-            <div className="space-y-4 text-slate-600 text-lg leading-relaxed font-medium">
+            <div className="space-y-4 text-slate-600 text-lg md:text-xl leading-relaxed font-medium max-w-3xl">
               <p>
-                🚀 Passionate QA Engineer with 3 years of experience in manual testing of web and mobile applications, along with hands-on exposure to API testing using Postman and SoapUI, and automation using Java & Selenium.
+                Senior Quality Assurance Engineer with <span className="font-semibold text-slate-800">4 years of experience</span> across manual and automated testing for business-critical applications. Specialized in <span className="font-semibold text-slate-800">Playwright (TypeScript)</span> automation, API testing, SQL database validation, and mobile application testing (Android & iOS), with hands-on use of <span className="font-semibold text-slate-800">Generative AI</span> to accelerate test case generation and edge-case discovery.
               </p>
-              <p>
-                🔍 Skilled in writing detailed test cases, bug reports, and executing test plans to ensure quality and performance. Experienced in automating API flows and handling dynamic test data across multiple chained requests.
+              <p className="text-base md:text-lg text-slate-600">
+                Skilled in functional, regression, integration, system, UAT, exploratory, smoke, sanity, and end-to-end testing across International Remittance, Forex, AML Screening, Customer Onboarding, Payment Processing, and Healthcare domains.
               </p>
-              <div className="pt-4 flex flex-wrap gap-4">
-                <div className="flex items-center gap-2 text-slate-900 font-bold px-4 py-2 bg-white rounded-lg shadow-sm border border-slate-100">
-                  <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse" />
-                  Currently at Distinct Infotech
+              <div className="pt-4 flex justify-center items-center flex-wrap gap-4">
+                <div className="inline-flex items-center gap-2.5 text-slate-900 font-bold px-5 py-2.5 bg-white rounded-full shadow-sm border border-slate-200 text-sm">
+                  <div className="w-2.5 h-2.5 bg-emerald-500 rounded-full animate-pulse" />
+                  Currently Senior QA Engineer at Distinct Infotech Solutions
                 </div>
-              </div>
-            </div>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            className="p-8 md:p-12 rounded-[2.5rem] bg-slate-900 border border-slate-800 shadow-2xl relative overflow-hidden mt-10 md:mt-16 group"
-          >
-            {/* Background Accent */}
-            <div className="absolute -top-24 -right-24 w-48 h-48 bg-emerald-500/10 blur-[80px] rounded-full group-hover:bg-emerald-500/20 transition-colors duration-700" />
-            
-            <div className="relative z-10">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-10 h-10 bg-emerald-500/20 rounded-xl flex items-center justify-center">
-                  <TrendingUp className="w-5 h-5 text-emerald-400" />
-                </div>
-                <h4 className="text-2xl font-bold text-white tracking-tight">Technical Roadmap</h4>
-              </div>
-              
-              <p className="text-slate-300 mb-10 leading-relaxed font-medium">
-                Pioneering growth in advanced automation frameworks to deliver zero-defect financial ecosystems.
-              </p>
-              
-              <div className="space-y-5">
-                {[
-                  { title: 'TestNG Automation', color: 'bg-emerald-500' },
-                  { title: 'RestAssured API', color: 'bg-emerald-400' },
-                  { title: 'Cypress E2E', color: 'bg-emerald-600' }
-                ].map((item) => (
-                  <div key={item.title} className="flex items-center gap-4 group/item">
-                    <div className="w-10 h-10 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center group-hover/item:border-emerald-500/50 transition-all duration-300">
-                      <ShieldCheckIcon className="w-5 h-5 text-emerald-400" />
-                    </div>
-                    <div>
-                      <span className="block text-sm font-bold text-white tracking-wide">{item.title}</span>
-                      <div className="w-32 h-1.5 bg-white/5 rounded-full mt-2 overflow-hidden">
-                        <motion.div 
-                          className={`h-full ${item.color}`}
-                          initial={{ width: 0 }}
-                          whileInView={{ width: '60%' }}
-                          viewport={{ once: true }}
-                          transition={{ duration: 1, delay: 0.5 }}
-                        />
-                      </div>
-                    </div>
-                  </div>
-                ))}
               </div>
             </div>
           </motion.div>
         </div>
 
-        <div className="mb-16">
+        <div className="text-center mb-16">
           <h2 className="text-sm font-bold text-emerald-600 uppercase tracking-widest mb-3">Core Competencies</h2>
           <h3 className="text-4xl md:text-5xl font-bold text-slate-900 tracking-tight">Expertise <span className="text-emerald-600">Dashboard</span></h3>
         </div>
@@ -130,7 +82,7 @@ export default function Expertise() {
                 </div>
                 <h4 className="text-2xl font-bold text-slate-900 mb-4 tracking-tight">{card.title}</h4>
                 <div className="flex-grow">
-                  <p className="text-slate-600 mb-8 leading-relaxed text-sm">
+                  <p className="text-slate-600 mb-8 leading-relaxed text-sm font-medium">
                     {card.description}
                   </p>
                 </div>
@@ -149,25 +101,5 @@ export default function Expertise() {
         </div>
       </div>
     </section>
-  );
-}
-
-function ShieldCheckIcon({ className }) {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className={className}
-    >
-      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" />
-      <path d="m9 12 2 2 4-4" />
-    </svg>
   );
 }

@@ -4,10 +4,11 @@ import { motion } from 'framer-motion';
 import { GraduationCap, Award, CheckCircle2, ExternalLink } from 'lucide-react';
 
 const certs = [
-  { name: 'Automation Testing with Selenium with JAVA', issuer: 'The Testing Academy', url: 'https://www.linkedin.com/in/ashidhpc/details/certifications/' },
-  { name: 'Certified in JPMorgan Chase & Co\'s Agile', issuer: 'Forage', url: 'https://www.linkedin.com/in/ashidhpc/details/certifications/' },
+  { name: 'Playwright JS/TS Automation Testing from Scratch & Framework', issuer: 'Rahul Shetty Academy (Udemy)', url: 'https://www.linkedin.com/in/ashidhpc/details/certifications/' },
+  { name: 'Agile Job Simulation', issuer: 'JPMorgan Chase & Co. (Forage)', url: 'https://www.linkedin.com/in/ashidhpc/details/certifications/' },
   { name: 'SQL Masterclass: Zero to Hero', issuer: 'The Testing Academy', url: 'https://www.linkedin.com/in/ashidhpc/details/certifications/' },
-  { name: 'Basic to Advanced Microsoft Excel', issuer: 'Skill Nation', url: 'https://www.linkedin.com/in/ashidhpc/details/certifications/' },
+  { name: 'Selenium WebDriver with Java Automation', issuer: 'The Testing Academy', url: 'https://www.linkedin.com/in/ashidhpc/details/certifications/' },
+  { name: 'Advanced Excel', issuer: 'Skill Nation', url: 'https://www.linkedin.com/in/ashidhpc/details/certifications/' },
   { name: 'Responsive Web Design', issuer: 'FreeCodeCamp', url: 'https://www.linkedin.com/in/ashidhpc/details/certifications/' }
 ];
 
@@ -32,8 +33,9 @@ export default function Education() {
                   <GraduationCap className="w-8 h-8" />
                 </div>
                 <div>
-                  <h4 className="text-xl font-bold text-slate-900 mb-1">Bachelor of Technology</h4>
-                  <p className="text-emerald-700 font-bold mb-4">Government Engineering College Idukki</p>
+                  <h4 className="text-xl font-bold text-slate-900 mb-1">Bachelor of Technology (B.Tech)</h4>
+                  <p className="text-slate-700 font-semibold mb-1">Electrical & Electronics Engineering</p>
+                  <p className="text-emerald-700 font-bold mb-4">Government Engineering College, Idukki</p>
                   <div className="text-sm text-slate-500 font-medium">Graduated Class of 2021</div>
                 </div>
               </div>

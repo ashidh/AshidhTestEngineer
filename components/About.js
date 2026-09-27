@@ -16,15 +16,15 @@ export default function About() {
           >
             <h2 className="text-4xl md:text-5xl font-black mb-8">Strategizing <span className="neon-text">Excellence</span></h2>
             <p className="text-lg text-text-secondary mb-6 leading-relaxed">
-              With over 3 years of hands-on experience in Quality Control, I specialize in bridging the gap between development and end-user satisfaction. My approach is rooted in precision, technological innovation, and a commitment to streamlining testing lifecycles.
+              With over 4 years of hands-on experience in Quality Control, I specialize in bridging the gap between development and end-user satisfaction. My approach is rooted in precision, technological innovation, and a commitment to streamlining testing lifecycles.
             </p>
             <p className="text-lg text-text-secondary mb-10 leading-relaxed font-medium">
               I don&apos;t just find bugs; I design workflows that prevent them. My leadership in QA involves implementing automation frameworks that scale and mentoring teams to achieve 100% excellence in every release.
             </p>
-            
+
             <div className="grid grid-cols-2 gap-8">
               <div>
-                <span className="text-4xl font-black text-white block">3+</span>
+                <span className="text-4xl font-black text-white block">4</span>
                 <span className="text-sm text-primary-cyan font-bold uppercase tracking-wider">Years Experience</span>
               </div>
               <div>

@@ -2,10 +2,11 @@
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Mail, Link as Linkedin, Send, Github, MapPin, CheckCircle2, AlertCircle } from 'lucide-react';
+import { Mail, Link as Linkedin, Send, Github, Phone, MapPin, CheckCircle2, AlertCircle } from 'lucide-react';
 
 export default function Contact() {
   const linkedinUrl = "https://www.linkedin.com/in/ashidhpc/";
+  const githubUrl = "https://github.com/ashidh";
 
   // State for form submission
   const [status, setStatus] = useState('idle'); // idle, submitting, success, error
@@ -46,19 +47,29 @@ export default function Contact() {
         <div className="flex flex-col md:flex-row gap-12 md:gap-16 items-center">
           <div className="md:w-1/2">
             <h2 className="text-sm font-bold text-emerald-400 uppercase tracking-widest mb-3">Get In Touch</h2>
-            <h3 className="text-4xl md:text-5xl font-bold mb-8 tracking-tight">Let&apos;s Build Better <span className="text-emerald-400">Financial Experiences</span></h3>
+            <h3 className="text-4xl md:text-5xl font-bold mb-8 tracking-tight">Let&apos;s Build Better <span className="text-emerald-400">Software Experiences</span></h3>
             <p className="text-slate-400 text-lg mb-10 leading-relaxed font-medium">
-              Ready to elevate your software quality? Whether you&apos;re looking for specialized testing expertise or technical leadership, I&apos;m open to discussing how we can achieve precision at scale.
+              Ready to elevate your software quality? Whether you&apos;re looking for specialized testing expertise or automation leadership, I&apos;m open to discussing how we can achieve precision at scale.
             </p>
 
-            <div className="space-y-8">
+            <div className="space-y-6">
               <div className="flex items-center gap-6 group">
                 <div className="w-14 h-14 bg-slate-800 rounded-2xl flex items-center justify-center text-emerald-400 border border-slate-700 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300">
                   <Mail className="w-6 h-6" />
                 </div>
                 <div>
-                  <span className="text-xs font-bold text-slate-500 uppercase tracking-widest block mb-1">Email Strategy</span>
+                  <span className="text-xs font-bold text-slate-500 uppercase tracking-widest block mb-1">Direct Email</span>
                   <a href="mailto:ashidhchandran@gmail.com" className="text-xl font-bold hover:text-emerald-400 transition-colors">ashidhchandran@gmail.com</a>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-6 group">
+                <div className="w-14 h-14 bg-slate-800 rounded-2xl flex items-center justify-center text-emerald-400 border border-slate-700 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300">
+                  <Phone className="w-6 h-6" />
+                </div>
+                <div>
+                  <span className="text-xs font-bold text-slate-500 uppercase tracking-widest block mb-1">Phone Number</span>
+                  <a href="tel:+918848293261" className="text-xl font-bold hover:text-emerald-400 transition-colors tracking-tight">+91 8848293261</a>
                 </div>
               </div>
 
@@ -68,7 +79,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-widest block mb-1">Professional Network</span>
-                  <a href={linkedinUrl} target="_blank" rel="noopener noreferrer" className="text-xl font-bold hover:text-emerald-400 transition-colors tracking-tight">linkedin.com/in/ashidhpc/</a>
+                  <a href={linkedinUrl} target="_blank" rel="noopener noreferrer" className="text-xl font-bold hover:text-emerald-400 transition-colors tracking-tight">linkedin.com/in/ashidhpc</a>
                 </div>
               </div>
             </div>
@@ -169,9 +180,9 @@ export default function Contact() {
             <span>© {new Date().getFullYear()} Ashidh P C. Precision Built.</span>
           </div>
           <div className="flex items-center gap-8">
-            <a href="#" className="hover:text-emerald-400 transition-colors">Resume</a>
+            <a href="/Ashidh_P_C_Resume.pdf" download="Ashidh_P_C_Resume.pdf" className="hover:text-emerald-400 transition-colors">Resume</a>
             <a href={linkedinUrl} target="_blank" rel="noopener noreferrer" className="hover:text-emerald-400 transition-colors">LinkedIn</a>
-            <a href="#" className="hover:text-emerald-400 transition-colors">Github</a>
+            <a href={githubUrl} target="_blank" rel="noopener noreferrer" className="hover:text-emerald-400 transition-colors">GitHub</a>
           </div>
         </footer>
       </div>
