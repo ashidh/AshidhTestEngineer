@@ -75,7 +75,7 @@ export default function Hero() {
       </div>
 
       {/* Floating QA Badges */}
-      <motion.div
+      {/*<motion.div
         initial={{ opacity: 0, x: -30 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8, delay: 0.3 }}
@@ -85,9 +85,9 @@ export default function Hero() {
           <CheckCircle2 className="w-3.5 h-3.5" />
         </div>
         <span>Playwright E2E &bull; 100% Passed</span>
-      </motion.div>
+      </motion.div>*/}
 
-      <motion.div
+      {/*<motion.div
         initial={{ opacity: 0, x: 30 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8, delay: 0.4 }}
@@ -97,7 +97,7 @@ export default function Hero() {
           <Zap className="w-3.5 h-3.5" />
         </div>
         <span>70-80% Faster Regression</span>
-      </motion.div>
+      </motion.div>*/}
 
       <div className="container max-w-5xl mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
